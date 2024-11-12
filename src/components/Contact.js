@@ -15,7 +15,7 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} />
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="About image" />
               }
             </TrackVisibility>
           </Col>
