@@ -12,6 +12,9 @@ export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredP, setIsHoveredP] = useState(false);
+
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -49,6 +52,22 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
+              <a
+                 href="mailto:jinanghanam@gmail.com "
+                onMouseEnter={() => setIsHovered(true)} // When mouse enters
+                onMouseLeave={() => setIsHovered(false)} // When mouse leaves
+              >
+                <img src={isHovered ? '/emailImg.png' : '/email (1).png'} 
+                  alt="Email icon" />
+              </a>
+              <a
+                className="email-href social-icon" href="tel:76544123"
+                onMouseEnter={() => setIsHoveredP(true)} // When mouse enters
+                onMouseLeave={() => setIsHoveredP(false)} // When mouse leaves
+              >
+                <img src={isHoveredP ? '/telephone.png' : '/telephoneWhite.png'} 
+                  alt="phone icon" />
+              </a>
                 <a href="https://www.linkedin.com/in/jinan-ghannam-803bb1332/"><img src={navIcon1} alt="linkedin icon image" /></a>
                 <a href="https://github.com/jinan14"><img src="/github-mark-white.png" alt="github icon image" /></a>
                 <a href="https://www.instagram.com/jinan._.ghannam/profilecard/?igsh=MXV3NXM3emd2MTEzag=="><img src={navIcon3} alt="instagram icon image" /></a>
