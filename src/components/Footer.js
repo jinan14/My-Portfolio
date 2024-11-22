@@ -4,8 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { MdOutlineMail } from "react-icons/md";
+import React, { useState } from 'react';
 
 export const Footer = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredP, setIsHoveredP] = useState(false);
   return (
     <footer className="footer">
       <Container>
@@ -17,7 +20,22 @@ export const Footer = () => {
 
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a className="email-href" href="https://github.com/jinan14"><MdOutlineMail className="email-icons"/></a>
+              <a
+                 href="mailto:jinanghanam@gmail.com "
+                onMouseEnter={() => setIsHovered(true)} // When mouse enters
+                onMouseLeave={() => setIsHovered(false)} // When mouse leaves
+              >
+                <img src={isHovered ? '/emailImg.png' : '/email (1).png'} 
+                  alt="GitHub icon" />
+              </a>
+              <a
+                className="email-href social-icon" href="mailto:jinanghanam@gmail.com "
+                onMouseEnter={() => setIsHoveredP(true)} // When mouse enters
+                onMouseLeave={() => setIsHoveredP(false)} // When mouse leaves
+              >
+                <img src={isHoveredP ? '/telephone.png' : '/email (1).png'} 
+                  alt="GitHub icon" />
+              </a>
               <a href="https://www.linkedin.com/in/jinan-ghannam-803bb1332/"><img src={navIcon1} alt="linkedin icon image" /></a>
               <a href="https://github.com/jinan14"><img src="/github-mark-white.png" alt="github icon image" /></a>
               <a href="https://www.instagram.com/jinan._.ghannam/profilecard/?igsh=MXV3NXM3emd2MTEzag=="><img src={navIcon3} alt="instagram icon image" /></a>
