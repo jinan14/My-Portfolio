@@ -81,7 +81,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar Css ************/
+/************ Ibar Css ************/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -497,4 +497,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.hover-black:hover {
+  color: black !important;
+}
+
+.email-icons{
+  color: white;
+  font-size: 18px;
+}
+
+.email-icons:hover{
+  color: black;
+}
+
+.social-icon a:hover{
+  color: black !important;
 }
