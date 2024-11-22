@@ -26,15 +26,15 @@ export const Footer = () => {
                 onMouseLeave={() => setIsHovered(false)} // When mouse leaves
               >
                 <img src={isHovered ? '/emailImg.png' : '/email (1).png'} 
-                  alt="GitHub icon" />
+                  alt="Email icon" />
               </a>
               <a
-                className="email-href social-icon" href="mailto:jinanghanam@gmail.com "
+                className="email-href social-icon" href="tel:76544123"
                 onMouseEnter={() => setIsHoveredP(true)} // When mouse enters
                 onMouseLeave={() => setIsHoveredP(false)} // When mouse leaves
               >
-                <img src={isHoveredP ? '/telephone.png' : '/email (1).png'} 
-                  alt="GitHub icon" />
+                <img src={isHoveredP ? '/telephone.png' : '/telephoneWhite.png'} 
+                  alt="phone icon" />
               </a>
               <a href="https://www.linkedin.com/in/jinan-ghannam-803bb1332/"><img src={navIcon1} alt="linkedin icon image" /></a>
               <a href="https://github.com/jinan14"><img src="/github-mark-white.png" alt="github icon image" /></a>
