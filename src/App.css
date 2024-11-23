@@ -79,9 +79,12 @@ p.success {
 }
 
 p.danger {
-	color: red;
-}
+	color: red9}
 /************ Ibar Css ************/
+.NavImg img {
+  width: 90px;
+  height: 90px;
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
