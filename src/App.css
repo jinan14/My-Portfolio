@@ -535,7 +535,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media (max-width: 480px) {
   .banner h1 {
-    font-size: 2rem; /* Larger size for mobile screens */
+    font-size: 3rem; /* Larger size for mobile screens */
   }
   .responsive-text {
     font-size: 2rem; /* Even smaller size for very small screens */
