@@ -99,15 +99,21 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #fff ;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+nav.navbar .navbar-nav a.nav-link.navbar-link.active,
+nav.navbar .navbar-nav a.nav-link.navbar-link:focus
+{
+    opacity: 3;
+    background: linear-gradient(90deg, #9233eb,#fa46c4, #4cccf7);
+    -webkit-background-clip: text ;
+    color: transparent;
+    font-weight: bold;
 }
 span.navbar-text {
     display: flex;
