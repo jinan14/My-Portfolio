@@ -539,12 +539,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media (max-width: 768px) {
+  
   .responsive-text {
     font-size: 2.5rem; /* Smaller size for tablets and small screens */
   }
 }
-
+@media (max-width: 580px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 480px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .banner h1 {
     font-size: 3rem; /* Larger size for mobile screens */
   }

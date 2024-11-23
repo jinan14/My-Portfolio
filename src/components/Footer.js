@@ -14,7 +14,7 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center justify-content-center">
 
-          <Col size={12} sm={6}>
+          <Col size={12} sm={6} className="logo">
             <img src="/png.png" alt="logo image" />
           </Col>
 
