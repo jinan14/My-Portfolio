@@ -517,9 +517,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .responsive-text {
   font-size: 3rem /* Default size for larger screens */
 }
+.myName {
+  background: linear-gradient(90deg, #9233eb,#fa46c4, #4cccf7);
+  -webkit-background-clip: text ;
+  color: transparent;
+}
 
 @media (max-width: 990px) {
-  .banner h1 {
+  .banner h1{
     font-size: 2.5rem; /* Larger size for mobile screens */
   }
   .responsive-text {

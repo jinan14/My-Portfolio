@@ -27,7 +27,8 @@ export const Contact = () => {
                   <hr/>
                   <Row>
                     <p>
-                      I’m Jinan Ghannam, a dedicated computer science student with a strong foundation in full-stack web development.
+                     
+                      I’m <span className="myName"><b>Jinan Ghannam</b>  </span>, a dedicated computer science student with a strong foundation in full-stack web development.
                     </p>
                     <p>
                       I enjoy creating dynamic, user-friendly, and functional websites that enhance the overall user experience.
