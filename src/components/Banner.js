@@ -12,7 +12,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "A Web Developer"];
-  const period = 800;
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -41,7 +41,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(300);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -56,7 +56,7 @@ export const Banner = () => {
              
               <div className="animate__animated animate__fadeIn">
                 <span className="tagline rounded-3">Welcome to my Portfolio</span>
-                <h1 >{`Hi! I'm Jinan`} <br/> <span className="txt-rotate responsive-text" dataPeriod="800" data-rotate='[ "A Web Developer"]'><span className="wrap">{text}</span></span></h1>
+                <h1 >{`Hi! I'm Jinan`} <br/> <span className="txt-rotate responsive-text"  data-rotate='[ "A Web Developer"]'><span className="wrap">{text}</span></span></h1>
                   <p>Passionate for building efficient, user-friendly applications. With expertise across both frontend and backend technologies</p>
                   <button onClick={() => console.log('connect')}><a className="underline-none text-white" href="mailto:jinanghanam@gmail.com">Let’s Connect </a> <ArrowRightCircle size={25} /> </button>
               </div>
