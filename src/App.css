@@ -86,9 +86,10 @@ p.danger {
   height: 80px;
 }
 nav.navbar {
-  padding: 18px 0;
+  padding: 10px;
   position: fixed;
   width: 100%;
+  backdrop-filter: blur(10px);
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
