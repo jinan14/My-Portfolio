@@ -13,9 +13,8 @@ export const Contact = () => {
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
-              {({ isVisible }) =>
                 <img className="animate__animated animate__zoomIn" src="/jinan2.png" alt="About image" />
-              }
+              
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
