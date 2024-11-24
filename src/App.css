@@ -110,8 +110,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active,
-nav.navbar .navbar-nav a.nav-link.navbar-link:focus
+nav.navbar .navbar-nav a.nav-link.navbar-link.active
+/* nav.navbar .navbar-nav a.nav-link.navbar-link:focus */
 {
     opacity: 3;
     background: linear-gradient(90deg, #9233eb,#fa46c4, #4cccf7);

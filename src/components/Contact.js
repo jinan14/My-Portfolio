@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 export const Contact = () => {
 
   return (
-    <section className="contact" style={{ backgroundImage: `url("/banner-bg.png")` }} id="connect">
+    <section className="contact" style={{ backgroundImage: `url("/banner-bg.png")` }} id="about">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
