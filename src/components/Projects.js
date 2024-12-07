@@ -47,6 +47,45 @@ export const Projects = () => {
     },
   ];
 
+  const projects2 = [
+    {
+      title: "Quiz App",
+      description: "Test your knowledge with this test",
+      imgUrl: "/test-app.png",
+      url: "https://test5-app.netlify.app/"
+    },
+    {
+      title: "Weather App",
+      description: "Check the Weather of the city you want",
+      imgUrl: "/weather.png",
+      url: "https://weather-react-app3.netlify.app/"
+    },
+    {
+      title: "Hangman Game",
+      description: "Best Game for programmers",
+      imgUrl: "/hangman.png",
+      url: "https://hangman-guess-programming.netlify.app/"
+    },
+    {
+      title: "Pizza Burg",
+      description: "Menu website with add product functionality",
+      imgUrl: "/pizza-burg.png",
+      url: "https://pizza-burg.netlify.app/"
+    },
+    {
+      title: "Quikshop",
+      description: "Fully functional E-Commerce website",
+      imgUrl: "/e-com.png",
+      url: ""
+    },
+    {
+      title: "Calculator",
+      description: "calculate the number you want",
+      imgUrl: "/Calculator.png",
+      url: "https://calculator-appj.netlify.app/"
+    },
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -62,11 +101,11 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="first">Tab 1</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Tab 2</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className="animate__animated animate__slideInUp">
@@ -87,11 +126,40 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                      </Tab.Pane>
+                      {/* <Tab.Pane eventKey="second">
+                      <Row>
+                          {projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                onClick={() => {
+                                  if (project.url) {
+                                    window.open(project.url, '_blank'); // Opens in a new tab
+                                  }
+                                }}
+                              />
+                            );
+                          })}
+                        </Row>
+                      </Tab.Pane> */}
                       <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p> */}
+                        <Row>
+                          {projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                onClick={() => {
+                                  if (project.url) {
+                                    window.open(project.url, '_blank'); // Opens in a new tab
+                                  }
+                                }}
+                              />
+                            );
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
