@@ -37,7 +37,7 @@ export const Projects = () => {
       title: "Thought Bubble",
       description: "Fully functional notes app",
       imgUrl: "/notes-app.png",
-      url: ""
+      url: "https://github.com/jinan14/Notes-app"
     },
     {
       title: "Wall Painting",
@@ -76,7 +76,7 @@ export const Projects = () => {
       title: "Quikshop",
       description: "Fully functional E-Commerce website",
       imgUrl: "/e-com.png",
-      url: ""
+      url: "https://github.com/jinan14/E-Commerce-app"
     },
     {
       title: "Calculator",

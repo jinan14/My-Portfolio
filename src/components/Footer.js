@@ -40,7 +40,7 @@ export const Footer = () => {
               <a href="https://github.com/jinan14"><img src="/github-mark-white.png" alt="github icon image" /></a>
               <a href="https://www.instagram.com/jinan._.ghannam/profilecard/?igsh=MXV3NXM3emd2MTEzag=="><img src={navIcon3} alt="instagram icon image" /></a>
             </div>
-            <p>Copyright 2024. All Rights Reserved</p>
+            <p>Copyright Jinan Ghannam 2024. <br/> All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
